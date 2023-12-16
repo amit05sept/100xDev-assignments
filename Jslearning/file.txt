@@ -1,0 +1,2 @@
+Hello this is me amit from the file.txt.
+i am writing this specific line from Js file.  --  -- this is going to be appended into the file -- -- 

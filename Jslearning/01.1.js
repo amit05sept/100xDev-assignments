@@ -158,3 +158,25 @@
 // clock(10);
 
 
+// function isAnagram(str1, str2) {
+//     if (str1.length !== str2.length) console.log(false);
+  
+//     str1 = str1.toLowerCase();
+//     str2 = str2.toLowerCase();
+  
+//     const map1 = Array(26).fill(0);
+//     const map2 = Array(26).fill(0);
+  
+//     for (let i = 0; i < str1.length; i++) {
+//       map1[str1[i].charCodeAt(0) - "a".charCodeAt(0)]++;
+//     }
+//     for (let i = 0; i < str2.length; i++) {
+//       map2[str2[i].charCodeAt(0) - "a".charCodeAt(0)]++;
+//     }
+  
+//     const result = JSON.stringify(map1) === JSON.stringify(map2);
+//     return result;
+//   }
+
+
+
