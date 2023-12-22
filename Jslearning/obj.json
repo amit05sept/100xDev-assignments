@@ -1,6 +1,1 @@
-{
-    "name": "John Doe",
-    "age": 30,
-    "city": "Example City"
-  }
-  
+[{"id":0,"title":"buy mangoes","discription":"today you have to buy mangoes","completed":false},{"id":1,"title":"buy milk","discription":"today you have to buy milk","completed":false}]

@@ -1,4 +1,4 @@
-// const fs = require("fs");
+const fs = require("fs");
 
 // const filePath ="file.txt";
 
@@ -41,19 +41,47 @@
 //     }
 // });
 
-//----------- reading a json object.
-// const filePath = "obj.json";
-// fs.readFile(filePath, "utf8", (err, data) => {
-//   if (err) {
-//     console.error(`Error while reading the file : `, err);
-//     return;
-//   }
+// ----------- reading a json object.
+const filePath = "obj.json";
+fs.readFile(filePath, "utf8", (err, data) => {
+  if (err) {
+    console.error(`Error while reading the file : `, err);
+    return;
+  }
 
-//   try {
-//     const jsonObject = JSON.parse(data);
-//     console.log(jsonObject);
-//   } catch (err) {
-//     console.error("err is : ", err);
+  try {
+    const jsonObject = JSON.parse(data);
+    //   console.log(jsonObject);
+    return jsonObject;
+  } catch (err) {
+    console.error("err is : ", err);
+  }
+});
+
+//-------- writing a json object
+
+// const contentToWrite = [
+//   {
+//     id: 0,
+//     title: "buy mangoes",
+//     discription: "today you have to buy mangoes",
+//     completed: false,
+//   },
+//   {
+//     id: 1,
+//     title: "buy milk",
+//     discription: "today you have to buy milk",
+//     completed: false,
+//   }
+// ];
+
+// const jsonContent = JSON.stringify(contentToWrite);
+// const filePath = "obj.json";
+// fs.writeFile(filePath, jsonContent, "utf8", (err) => {
+//   if (err) {
+//     console.error(`Error while writng the file : ${err}`);
+//   } else {
+//     console.log(`File has been written successfully!!`);
 //   }
 // });
 
@@ -75,7 +103,6 @@
 // readTheFile();
 
 // --------------------------------------------------------
-
 
 // const fs = require("fs");
 
